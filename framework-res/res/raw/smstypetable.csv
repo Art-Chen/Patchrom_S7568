@@ -1,0 +1,11 @@
+com.kddi.android.intent.action.LOCKSMS_RECEIVED,com.kddi.android.permission.RECEIVE_LOCKSMS,2,0x000E,0x00,,,,,,
+jp.co.sharp.android.intent.action.ESIGNAL_RECEIVED,jp.co.sharp.android.permission.RECEIVE_ESIGNAL,0,0xFFFF,0x01,0,10,0x5349474E414C5549443A,,,
+com.kddi.android.intent.action.KUPSMS_RECEIVED,com.kddi.android.permission.RECEIVE_KUPSMS,2,0xFFFF,0x01,0,3,0x000701,,,
+com.kddi.android.intent.action.UNSUP_SMS_RECEIVED,com.kddi.android.permission.RECEIVE_UNSUP_SMS,0,0xEF43,0x00,,,,,,
+com.kddi.android.intent.action.UNSUP_SMS_RECEIVED,com.kddi.android.permission.RECEIVE_UNSUP_SMS,0,0xEF40,0x00,,,,,,
+com.kddi.android.intent.action.UNSUP_SMS_RECEIVED,com.kddi.android.permission.RECEIVE_UNSUP_SMS,0,0xFFFF,0xFF,0,2,0xEF44,0,2,0xEF55
+,,1,0xFFFF,0xFF,0,2,0xEF56,0,2,0xEF7E
+,,1,0xFFFF,0xFF,0,2,0x0002,0,2,0x005F
+,,0,0xFFFF,0xFF,0,2,0x0060,0,2,0x00AF
+com.kddi.android.intent.action.UNSUP_SMS_RECEIVED,com.kddi.android.permission.RECEIVE_UNSUP_SMS,0,0xFFFF,0xFF,0,2,0x00B0,0,2,0x00FF
+com.kddi.android.intent.action.ESIGNAL_RECEIVED,com.kddi.android.permission.RECEIVE_ESIGNAL,0,0xFFFF,0x01,0,10,0x5349474E414C5549443A,,,

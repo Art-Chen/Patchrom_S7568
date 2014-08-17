@@ -1,0 +1,20 @@
+*** ./smali/android/text/format/DateFormat.smali	2014-08-15 13:37:17.144254164 +0800
+--- /home/art-chen/miuiv4/s7568/temp/new_smali/framework.jar.out/./smali/android/text/format/DateFormat.smali	2014-08-15 13:39:17.112257377 +0800
+***************
+*** 1170,1175 ****
+--- 1170,1184 ----
+      iget-object v1, v7, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
+  
+      .local v1, locale:Ljava/util/Locale;
++ 
++     sget-object v7, Ljava/util/Locale;->CHINA:Ljava/util/Locale;
++ 
++     invoke-virtual {v7, v1}, Ljava/util/Locale;->equals(Ljava/lang/Object;)Z
++ 
++     move-result v7
++ 
++     if-nez v7, :goto_0
++ 
+      sget-object v7, Landroid/text/format/DateFormat;->sLocaleLock:Ljava/lang/Object;
+  
+      monitor-enter v7

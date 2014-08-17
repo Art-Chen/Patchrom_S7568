@@ -1,0 +1,19 @@
+*** BaseErrorDialog.smali	2014-08-15 13:38:43.792256485 +0800
+--- BaseErrorDialog.smali	2014-08-15 13:40:46.292259765 +0800
+***************
+*** 17,23 ****
+      .prologue
+      const/high16 v2, 0x2
+  
+!     const v0, 0x10302f7
+  
+      invoke-direct {p0, p1, v0}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
+  
+--- 17,23 ----
+      .prologue
+      const/high16 v2, 0x2
+  
+!     const v0, 0x60d0020
+  
+      invoke-direct {p0, p1, v0}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
+  

@@ -1,0 +1,19 @@
+*** ./smali/android/app/DownloadManager.smali	2014-08-15 13:37:08.564253935 +0800
+--- /home/art-chen/miuiv4/s7568/temp/new_smali/framework.jar.out/./smali/android/app/DownloadManager.smali	2014-08-15 13:39:07.856257129 +0800
+***************
+*** 96,102 ****
+  
+  
+  # instance fields
+! .field private mBaseUri:Landroid/net/Uri;
+  
+  .field private mPackageName:Ljava/lang/String;
+  
+--- 96,102 ----
+  
+  
+  # instance fields
+! .field mBaseUri:Landroid/net/Uri;
+  
+  .field private mPackageName:Ljava/lang/String;
+  

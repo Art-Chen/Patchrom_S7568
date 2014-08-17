@@ -1,0 +1,13 @@
+*** ./smali/com/android/internal/app/LocalePicker.smali	2014-08-15 13:38:16.688255759 +0800
+--- /home/art-chen/miuiv4/s7568/temp/new_smali/framework.jar.out/./smali/com/android/internal/app/LocalePicker.smali	2014-08-15 13:40:19.200259040 +0800
+***************
+*** 385,390 ****
+--- 385,392 ----
+      :cond_4
+      invoke-static {v12}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
+  
++     invoke-static {v12}, Lmiui/util/ExtraLocalePicker;->adjustLocaleOrder([Lcom/android/internal/app/LocalePicker$LocaleInfo;)V
++ 
+      new-instance v20, Landroid/widget/ArrayAdapter;
+  
+      move-object/from16 v0, v20

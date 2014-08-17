@@ -1,0 +1,24 @@
+*** ./smali/com/android/internal/telephony/IIccPhoneBook.smali	2014-08-15 13:38:26.904256033 +0800
+--- /home/art-chen/miuiv4/s7568/temp/new_smali/framework.jar.out/./smali/com/android/internal/telephony/IIccPhoneBook.smali	2014-08-15 13:40:29.548259317 +0800
+***************
+*** 56,58 ****
+--- 56,74 ----
+          }
+      .end annotation
+  .end method
++ 
++ .method public abstract getFreeAdn()I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
++ .method public abstract getAdnCapacity()I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method

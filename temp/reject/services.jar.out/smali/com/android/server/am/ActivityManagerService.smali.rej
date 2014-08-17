@@ -1,0 +1,23 @@
+*** ActivityManagerService.smali	2014-08-15 13:38:44.504256504 +0800
+--- ActivityManagerService.smali	2014-08-15 13:40:47.052259786 +0800
+***************
+*** 10344,10349 ****
+  
+      invoke-virtual {v12, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  
+      iput-object v12, v15, Landroid/os/Message;->obj:Ljava/lang/Object;
+  
+      move-object/from16 v0, p0
+--- 10359,10370 ----
+  
+      invoke-virtual {v12, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  
++     const-string v3, "crash"
++ 
++     move-object/from16 v0, p2
++ 
++     invoke-virtual {v12, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
++ 
+      iput-object v12, v15, Landroid/os/Message;->obj:Ljava/lang/Object;
+  
+      move-object/from16 v0, p0

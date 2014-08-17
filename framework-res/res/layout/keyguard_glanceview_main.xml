@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/glance_lockscreen_root" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/GlanceBackGround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/background" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/glance_lockscreen_clock" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ContentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/MessageRowLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="40.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/MissedCallRelativeLayout" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/MissedDivideLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/glanceview_align_bar_53" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/MissedImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glanceview_icon_call" android:layout_toRightOf="@id/MissedDivideLine" />
+                    <TextView android:textSize="30.0dip" android:id="@id/MissedCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="8.0dip" android:id="@id/MissedString" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lockscrenn_glanceview_missed_call" android:layout_toRightOf="@id/MissedDivideLine" android:layout_alignBottom="@id/MissedDivideLine" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/NewMessageRelativeLayout" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/MessageDivideLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/glanceview_align_bar_53" />
+                    <ImageView android:id="@id/MessageImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glanceview_icon_msg" android:layout_toRightOf="@id/MessageDivideLine" />
+                    <TextView android:textSize="30.0dip" android:id="@id/MessageCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="8.0dip" android:id="@id/MessageString" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lockscrenn_glanceview_new_messages" android:layout_toRightOf="@id/MessageDivideLine" android:layout_alignBottom="@id/MessageDivideLine" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/BatteryChargingRelativeLayout" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/BatteryDivideLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/glanceview_align_bar_53" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/BatteryImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glanceview_icon_battery" android:layout_toRightOf="@id/BatteryDivideLine" />
+                    <TextView android:textSize="30.0dip" android:id="@id/BatteryCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/BatteryImage" />
+                    <TextView android:textSize="8.0dip" android:id="@id/BatteryPercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/BatteryCount" android:layout_alignTop="@id/BatteryCount" />
+                    <TextView android:textSize="8.0dip" android:id="@id/BatteryString" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lockscrenn_glanceview_battery_charging" android:layout_toRightOf="@id/BatteryDivideLine" android:layout_alignBottom="@id/BatteryDivideLine" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/AlarmRowLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="40.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/AlarmRelativeLayout" android:visibility="invisible" android:layout_width="200.0dip" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/AlarmDivideLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/glanceview_align_bar_53" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/AlarmImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glanceview_icon_alarm" android:layout_toRightOf="@id/AlarmDivideLine" />
+                    <TextView android:textSize="30.0dip" android:id="@id/AlarmCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/AlarmImage" />
+                    <TextView android:textSize="8.0dip" android:id="@id/AlarmDay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/AlarmCount" />
+                    <TextView android:textSize="8.0dip" android:id="@id/AlarmRemain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lockscrenn_glanceview_alarm_remained" android:layout_toRightOf="@id/AlarmDivideLine" android:layout_alignBottom="@id/AlarmDivideLine" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/MusicRowLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/NowMusicRelativeLayout" android:visibility="invisible" android:layout_width="300.0dip" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/MusicDivideLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/glanceview_align_bar_53" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/MusicImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glanceview_icon_music" android:layout_toRightOf="@id/MusicDivideLine" />
+                    <TextView android:textSize="30.0dip" android:id="@id/MusicSong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/MusicImage" />
+                    <TextView android:textSize="8.0dip" android:id="@id/MusicSinger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/MusicDivideLine" android:layout_alignBottom="@id/MusicDivideLine" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

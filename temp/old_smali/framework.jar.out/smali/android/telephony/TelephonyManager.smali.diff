@@ -1,0 +1,23 @@
+*** ./smali/android/telephony/TelephonyManager.smali	2014-08-15 13:37:49.756255038 +0800
+--- /home/art-chen/miuiv4/s7568/temp/new_smali/framework.jar.out/./smali/android/telephony/TelephonyManager.smali	2014-08-15 13:39:50.784258279 +0800
+***************
+*** 1355,1363 ****
+      .locals 1
+  
+      .prologue
+!     const-string v0, "gsm.sim.operator.numeric"
+  
+!     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+  
+      move-result-object v0
+  
+--- 1355,1363 ----
+      .locals 1
+  
+      .prologue
+!     sget-object v0, Landroid/telephony/TelephonyManager;->sContext:Landroid/content/Context;
+  
+!     invoke-static {v0}, Lmiui/telephony/ExtraTelephonyManager;->getSimOperator(Landroid/content/Context;)Ljava/lang/String;
+  
+      move-result-object v0
+  

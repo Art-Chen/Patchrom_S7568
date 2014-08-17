@@ -1,0 +1,35 @@
+*** Settings.smali	2014-08-15 13:38:34.636256240 +0800
+--- Settings.smali	2014-08-15 13:40:37.292259524 +0800
+***************
+*** 2516,2524 ****
+      move-result v3
+  
+      iput v3, v2, Lcom/android/server/pm/PackageSettingBase;->enabled:I
+      :try_end_b
+      .catch Ljava/lang/NumberFormatException; {:try_start_b .. :try_end_b} :catch_1
+  
+      :goto_7
+      const/4 v3, 0x0
+  
+--- 2516,2536 ----
+      move-result v3
+  
+      iput v3, v2, Lcom/android/server/pm/PackageSettingBase;->enabled:I
++ 
++     iget v3, v2, Lcom/android/server/pm/PackageSettingBase;->enabled:I
++ 
++     const/4 v5, 0x2
++ 
++     if-ne v3, v5, :cond_miui_add1
++ 
++     const/4 v3, 0x0
++ 
++     iput v3, v2, Lcom/android/server/pm/PackageSettingBase;->enabled:I
++ 
+      :try_end_b
+      .catch Ljava/lang/NumberFormatException; {:try_start_b .. :try_end_b} :catch_1
+  
++     :cond_miui_add1
+      :goto_7
+      const/4 v3, 0x0
+  

@@ -1,0 +1,19 @@
+*** IccProvider.smali	2014-08-15 13:38:26.604256025 +0800
+--- IccProvider.smali	2014-08-15 13:40:29.248259309 +0800
+***************
+*** 8,14 ****
+  
+  .field private static final ADN:I = 0x1
+  
+! .field private static final DBG:Z = false
+  
+  .field private static final FDN:I = 0x2
+  
+--- 8,14 ----
+  
+  .field private static final ADN:I = 0x1
+  
+! .field static final DBG:Z = false
+  
+  .field private static final FDN:I = 0x2
+  

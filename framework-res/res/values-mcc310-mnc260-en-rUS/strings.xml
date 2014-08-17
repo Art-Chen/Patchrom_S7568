@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="number_picker_increment_scroll_mode">%s press and hold.</string>
+    <string name="content_description_sliding_handle">Sliding handle. Press and hold.</string>
+    <string name="lockscreen_motion_unlock_guide_text">Press and hold screen and tilt device towards you</string>
+</resources>
