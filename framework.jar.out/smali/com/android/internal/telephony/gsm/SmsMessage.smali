@@ -50,7 +50,11 @@
 
 .field protected numberOfMessages:I
 
+.field private mti:I
+
 .field private protocolIdentifier:I
+
+.field private recipientAddress:Lcom/android/internal/telephony/gsm/GsmSmsAddress;
 
 .field private replyPathPresent:Z
 
